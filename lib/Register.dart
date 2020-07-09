@@ -14,6 +14,8 @@ class _RegisterState extends State<Register> {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
+            //Images
+
             Container(
                 height: 270,
                 decoration: BoxDecoration(
@@ -65,6 +67,8 @@ class _RegisterState extends State<Register> {
                         ),
                       ),
                     ),
+                    //Register Text on Top
+
                     Positioned(
                       child: FadeAnimation(
                         2,
@@ -92,7 +96,7 @@ class _RegisterState extends State<Register> {
                     padding: EdgeInsets.all(5),
                     decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(10),
+                        borderRadius: BorderRadius.circular(15),
                         boxShadow: [
                           BoxShadow(
                               color: Color.fromRGBO(143, 148, 251, .2),
@@ -101,6 +105,8 @@ class _RegisterState extends State<Register> {
                         ]),
                     child: Column(
                       children: <Widget>[
+                        //Name
+
                         Container(
                           padding: EdgeInsets.all(8.0),
                           decoration: BoxDecoration(
@@ -114,6 +120,9 @@ class _RegisterState extends State<Register> {
                                 hintStyle: TextStyle(color: Colors.grey[400])),
                           ),
                         ),
+
+                        //Email
+
                         Container(
                           padding: EdgeInsets.all(8.0),
                           child: TextField(
@@ -123,6 +132,9 @@ class _RegisterState extends State<Register> {
                                 hintStyle: TextStyle(color: Colors.grey[400])),
                           ),
                         ),
+
+                        //Mobile Number
+
                         Container(
                           padding: EdgeInsets.all(8.0),
                           child: TextField(
@@ -132,6 +144,9 @@ class _RegisterState extends State<Register> {
                                 hintStyle: TextStyle(color: Colors.grey[400])),
                           ),
                         ),
+
+                        //Referral Code
+
                         Container(
                           padding: EdgeInsets.all(8.0),
                           decoration: BoxDecoration(
@@ -145,6 +160,9 @@ class _RegisterState extends State<Register> {
                                 hintStyle: TextStyle(color: Colors.grey[400])),
                           ),
                         ),
+
+                        //Enter Password
+
                         Container(
                           padding: EdgeInsets.all(8.0),
                           child: TextField(
@@ -154,6 +172,9 @@ class _RegisterState extends State<Register> {
                                 hintStyle: TextStyle(color: Colors.grey[400])),
                           ),
                         ),
+
+                        //Confirm Password
+
                         Container(
                           padding: EdgeInsets.all(8.0),
                           child: TextField(
@@ -169,6 +190,9 @@ class _RegisterState extends State<Register> {
                   SizedBox(
                     height: 30,
                   ),
+
+                  //Register Button
+
                   FadeAnimation(
                       2,
                       Container(
@@ -192,6 +216,9 @@ class _RegisterState extends State<Register> {
                   SizedBox(
                     height: 15,
                   ),
+
+                  //Already a Member? Login Here
+
                   FadeAnimation(
                     1.7,
                     Text(

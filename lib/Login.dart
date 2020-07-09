@@ -11,9 +11,11 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Container(
+      body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
+            //Images
+
             Container(
                 height: 270,
                 decoration: BoxDecoration(
@@ -101,6 +103,8 @@ class _LoginState extends State<Login> {
                         ]),
                     child: Column(
                       children: <Widget>[
+                        //Email
+
                         Container(
                           padding: EdgeInsets.all(8.0),
                           decoration: BoxDecoration(
@@ -114,6 +118,9 @@ class _LoginState extends State<Login> {
                                 hintStyle: TextStyle(color: Colors.grey[400])),
                           ),
                         ),
+
+                        //Password
+
                         Container(
                           padding: EdgeInsets.all(8.0),
                           child: TextField(
@@ -129,6 +136,9 @@ class _LoginState extends State<Login> {
                   SizedBox(
                     height: 30,
                   ),
+
+                  //Login Button
+
                   FadeAnimation(
                       2,
                       Container(
@@ -152,6 +162,9 @@ class _LoginState extends State<Login> {
                   SizedBox(
                     height: 15,
                   ),
+
+                  //Forgot Password
+
                   FadeAnimation(
                     1.5,
                     Text(
@@ -160,13 +173,28 @@ class _LoginState extends State<Login> {
                     ),
                   ),
                   SizedBox(
-                    height: 35,
+                    height: 25,
                   ),
+
+                  //New? Register Here
+
                   FadeAnimation(
                     1.7,
                     Text(
                       "New? Register Here",
                       style: TextStyle(color: Color.fromRGBO(0, 128, 128, 1)),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 25,
+                  ),
+                  // Log In With Google TODO
+                  //TODO
+                  FadeAnimation(
+                    1.7,
+                    Text(
+                      "Log In With Google",
+                      style: TextStyle(color: Color.fromRGBO(255, 144, 0, 1)),
                     ),
                   ),
                 ],

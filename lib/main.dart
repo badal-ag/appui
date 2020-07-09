@@ -18,8 +18,8 @@ class HomePage extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Login(),
-          /*   DrawerScreen(),
-          HomeScreen(), 
+          /* DrawerScreen(),
+          HomeScreen(),
           Register(),*/
         ],
       ),
